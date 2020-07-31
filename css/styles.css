@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+nav{
+    opacity: .65;
+}
+
+.bg-image1 {
+  /* The image used */
+  background-image: url("baby.jpg");
+  opacity: 0.65;
+
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  position: relative;
+  background-attachment: fixed;
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image2{
+    background-color: beige;
+}
+
+.bg-image1, bg-image2 {
+    height: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.button{
+    background-color: #ffffff80;
+    border-radius: 0;
+    /* background-color: transparent; */
+    /* outline: none; */
+    /* box-shadow: none; */
+    /* border: none; */
+}
+
+span.homeLabel {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+div {
+    display: block;
+}
