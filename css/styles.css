@@ -16,7 +16,7 @@ nav{
 
 .bg-image1 {
   /* The image used */
-  background-image: url("baby.jpg");
+  background-image: url("../images/baby.jpg");
   z-index: -1;
   opacity: 0.65;
 
