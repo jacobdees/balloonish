@@ -7,7 +7,10 @@
     <!-- build.css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.js">
+    <link rel="stylesheet" href="css/itemcards.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/styles.css" media="screen"/>
     <!-- endbuild -->
@@ -16,50 +19,194 @@
 </head>
 <body>
 <div class="bg-image1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light static-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images\logo-removebg-preview.png" class="navlogo" style="max-width: 50px;"></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="images\test circle.png" style="max-width: 50px;"></a>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#reviews">reviews</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#order">order</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#about">about</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#follow">follow</a>
-          </li>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">reviews</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#order">order</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#follow">follow</a>
+              </li>
+          </div>
       </div>
     </nav>
 
-        <div class="caption">
+        <!-- <div class="caption  animate__animated animate__zoomIn">
             <span class="homeLabel">balloon.ish</span>
             <br>
-            <button class="button mt-4 btn btn-lg ">ORDER NOW</button>
-        </div>
+            <button class="button homeButton mt-4 btn btn-lg ">ORDER NOW</button>
+        </div> -->
     </div>
 
-    <!-- <div class="bg-image2">
-        <div class="carousel js-flickity">
-            <div class="carousel-cell">
-                <img src="images/mothers.JPEG" alt="mothers" />
-            </div>
-            <div class="carousel-cell">
-                <img src="images/door.JPEG" alt="door garland">
+<!-- DIVIDER #1 -->
+<!-- <span>Photo by <a href="https://unsplash.com/@amyshamblen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Amy Shamblen</a> on <a href="https://unsplash.com/images/things/balloon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+<div class="divider container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>Simple Garland</h1>
+        </div>
+    </div>
+</div>
+
+<!-- SIMPLE GARLAND OUT/INDOOR -->
+<div class="bg-image2 container-fluid d-flex justify-content-center align-items-center">
+    <div class="row border border-danger d-flex justify-content-center align-items-center h-50 w-100">
+        <div class="col-md-5">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images/simplegarland(o).PNG" alt="">
+                    <div class="contents front">
+                        <p>Simple Garland</p>
+                        <span>Outdoor</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <!-- <i class="flipbutton fa fa-arrow-left" aria-hidden="true"></i> -->
+                        <h1>$115</h1>
+                        <span>Up to 3 colors - 8ft long</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
+        <div class="col-md-5">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images\simplegarland(i).PNG" alt="">
+                    <div class="contents front">
+                        <p>Simple Garland</p>
+                        <span>Indoor</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <h1>$120</h1>
+                        <span>Up to 3 colors - 8ft long</span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+<!-- SIMPLE+ GARLAND OUT/INDOOR -->
+<div class="bg-image3 container-fluid">
+    <div class="row justify-content-center mh-100 h-100">
+        <div class="col-md-5 d-flex justify-content-center align-items-center my-4">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images\Balloonish\IMG_2170.HEIC" alt="">
+                    <div class="contents front">
+                        <p>Simple+ Garland</p>
+                        <span>Outdoor</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <!-- <i class="flipbutton fa fa-arrow-left" aria-hidden="true"></i> -->
+                        <h1>$125</h1>
+                        <span>Up to 4 colors - 10ft long</span>
+                        <p>Can be split upon request</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 d-flex justify-content-center align-items-center my-4">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images\simple+garland(i).PNG" alt="">
+                    <div class="contents front">
+                        <p>Simple+ Garland</p>
+                        <span>Indoor</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <h1>$110</h1>
+                        <span>Up to 4 colors - 10ft long</span>
+                        <p>Can be split upon request</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+<!-- COMPLEX & WALLS -->
+<div class="bg-image4 container-fluid">
+    <div class="row justify-content-center h-100">
+        <div class="col-lg-4 d-flex justify-content-center align-items-center my-4">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images/complexgarland.png" alt="">
+                    <div class="contents front">
+                        <p>Complex Garland</p>
+                        <span>Indoor</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <!-- <i class="flipbutton fa fa-arrow-left" aria-hidden="true"></i> -->
+                        <h1>$150</h1>
+                        <span>Up to 5 colors - 12ft long</span>
+                        <span>Includes 3 foil balloons</span>
+                        <p>Can be split upon request</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center my-4">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images\balloonwall(s).PNG" alt="">
+                    <div class="contents front">
+                        <p>Balloon Wall</p>
+                        <span>Small</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <h1>$300</h1>
+                        <span>Up to 4 colors - 8ft x 8ft</span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center my-4">
+            <div class="center">
+                <div class="front-face">
+                    <img class="itemCardImages" src="images\balloonwall(L).PNG" alt="">
+                    <div class="contents front">
+                        <p>Balloon Wall</p>
+                        <span>Large</span>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="contents back">
+                        <h1>$450</h1>
+                        <span>Up to 5 colors - 10ft x 10ft</span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
     
 
     <!-- build:js js/main.js -->
@@ -67,7 +214,7 @@
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="node_modules\flickity\dist\flickity.pkgd.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <!-- <script src="js/scripts.js"></script> -->
     <!-- endbuild -->
 </body>
 </html>

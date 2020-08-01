@@ -1,15 +1,23 @@
 html, body{
     height: 100%;
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav{
     opacity: .65;
+    background-color: #DCB99C;
+    z-index: 1000000;
+}
+
+.navbar{
+    z-index: 1000000;
 }
 
 .bg-image1 {
   /* The image used */
   background-image: url("baby.jpg");
+  z-index: -1;
   opacity: 0.65;
 
 
@@ -17,20 +25,33 @@ nav{
   height: 100%;
 
   /* Create the parallax scrolling effect */
-  position: relative;
-  background-attachment: fixed;
   background-position: 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
+
 
 .bg-image2{
-    background-color: beige;
+    background-color: #112168d3;
+    height: calc(var(--vh, 1vh) * 100);
+    /* top: 50%; */
+    /* height: 100%; */
+    /* opacity: 0.65; */
 }
 
-.bg-image1, bg-image2 {
-    height: 100%;
-    position: relative;
+.bg-image3{
+    background-color: #DCB99Cd3;
+    height: 900px;
+}
+
+.bg-image4{
+    background-color: #112168d3;
+    height: 1500px;
+}
+
+.bg-image1, .divider {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,28 +61,28 @@ nav{
     position: absolute;
     left: 0;
     top: 50%;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     color: #000;
 }
 
-.button{
+.button.homeButton{
     background-color: #ffffff80;
     border-radius: 0;
-    /* background-color: transparent; */
-    /* outline: none; */
-    /* box-shadow: none; */
-    /* border: none; */
 }
 
 span.homeLabel {
-    background-color: #111111;
+    background-color: #112168;
     color: #ffffff;
-    padding: 18px;
+    /* padding: 18px; */
     font-size: 25px;
     letter-spacing: 10px;
 }
 
 div {
     display: block;
+}
+
+.item1{
+    margin-left: 100px;
 }
